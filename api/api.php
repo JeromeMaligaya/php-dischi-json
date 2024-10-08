@@ -1,4 +1,14 @@
 <?php
 
 $disk_list = file_get_contents('../json/dischi.json');
-var_dump($disk_list);
+
+$output = json_decode($disk_list);
+
+header("Content-type: application/json");
+
+$response = [
+    "success" => true,
+    "data" => $output
+];
+
+echo json_encode($response);
