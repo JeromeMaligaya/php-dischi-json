@@ -20,7 +20,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- css -->
-    <link href="css/stylecss" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 
     <!-- script.js -->
     <script defer src="script/script.js"></script>
