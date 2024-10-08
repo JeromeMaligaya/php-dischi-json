@@ -29,11 +29,23 @@
 
 <body>
     <div id="app">
+        <header>
+            <h1>php-dischi-json</h1>
+        </header>
         <main>
-            <div class="container mt-4">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="fw-bolder text-center py-3">php-dischi-json</h1>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <ul>
+                            <li v-for="(disk, index) in listDisks" :key="index">
+                                <div class="img-box">
+                                    <img :src="disk.poster" :alt="disk.title">
+                                </div>
+                                <p>{{ disk.title }}</p>
+                                <p>{{ disk.author }}</p>
+                                <p>{{ disk.year }}</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
